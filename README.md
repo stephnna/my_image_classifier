@@ -109,6 +109,7 @@ Stephen Ezea
 GitHub: github.com/stephnna/
 
 [LinkedIn](https://www.linkedin.com/in/stephen-ezea)
+
 📜 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
@@ -116,5 +117,5 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 Special thanks to:
 
 The PyTorch community for their amazing library.
-Kaggle for datasets and inspiration.
+Amazon for datasets and inspiration.
 🏵️ Happy Coding & Flower Classifying! 🏵️
