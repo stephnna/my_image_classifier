@@ -101,7 +101,7 @@ git push origin feature-name
 🧑‍💻 Author
 Stephen Ezea
 GitHub: github.com/stephnna/
-[LinkedIn](https://www.linkedin.com/in/stephen-ezea)
+LinkedIn: https://www.linkedin.com/in/stephen-ezea
 
 🌟 Acknowledgments
 Special thanks to:
