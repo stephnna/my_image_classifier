@@ -110,9 +110,6 @@ GitHub: github.com/stephnna/
 
 [LinkedIn](https://www.linkedin.com/in/stephen-ezea)
 
-📜 License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
 🌟 Acknowledgments
 Special thanks to:
 
