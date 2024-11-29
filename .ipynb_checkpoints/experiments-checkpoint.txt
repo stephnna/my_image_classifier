@@ -1,0 +1,91 @@
+Experiment 1 setup
+network type: Alexnet
+learning rate = 0.01
+
+experiment 1:
+learning rate 0.001, decay = 0.01
+ model = models.alexnet(pretrained=True)
+        # Freeze all layers except the last classifier
+        for param in model.classifier.parameters():
+            param.requires_grad = False
+        # Modify the classifier
+        model.classifier = nn.Sequential(
+            nn.Dropout(0.6),
+            nn.Linear(9216, hidden_units),
+            nn.ReLU(),
+            nn.Dropout(0.4),
+            nn.Linear(hidden_units, hidden_units // 2),
+            nn.ReLU(),
+            nn.Dropout(0.4),
+            nn.Linear(hidden_units // 2, 102),
+            nn.LogSoftmax(dim=1)
+        )
+
+Experimement two parameters
+Time 8.30 to 3 - 45mins
+network type: Custom network
+learning rate = 0.0001
+No dropout
+input = 150528
+hidden = 64
+
+ transforms.RandomRotation(30),
+        transforms.RandomResizedCrop(224),
+        transforms.RandomHorizontalFlip(),
+
+
+Exp 3
+learning rate = 0.001
+python3 train.py flowers alexnet 256 16
+ model.classifier = nn.Sequential(
+            nn.Dropout(0.6),
+            nn.Linear(9216, hidden_units),
+            nn.ReLU(),
+            nn.Dropout(0.4),
+            nn.Linear(hidden_units, hidden_units // 2),
+            nn.ReLU(),
+            nn.Dropout(0.4),
+            nn.Linear(hidden_units // 2, hidden_units // 2),
+            nn.ReLU(),
+            nn.Dropout(0.4),
+            nn.Linear(hidden_units // 2, 102),
+            nn.LogSoftmax(dim=1)
+        )
+Experiment 4
+python3 train.py flowers alexnet 256 32
+learning rate 0.001
+ model = models.alexnet(pretrained=True)
+        # Freeze all layers except the last classifier
+        for param in model.classifier.parameters():
+            param.requires_grad = False
+        # Modify the classifier
+        model.classifier = nn.Sequential(
+            nn.Dropout(0.6),
+            nn.Linear(9216, hidden_units),
+            nn.ReLU(),
+            nn.Dropout(0.4),
+            nn.Linear(hidden_units, hidden_units // 2),
+            nn.ReLU(),
+            nn.Dropout(0.4),
+            nn.Linear(hidden_units // 2, 102),
+            nn.LogSoftmax(dim=1)
+        )
+Experiment 5
+python3 train.py flowers alexnet 256 64
+learning rate 0.001
+ model = models.alexnet(pretrained=True)
+        # Freeze all layers except the last classifier
+        for param in model.classifier.parameters():
+            param.requires_grad = False
+        # Modify the classifier
+        model.classifier = nn.Sequential(
+            nn.Dropout(0.6),
+            nn.Linear(9216, hidden_units),
+            nn.ReLU(),
+            nn.Dropout(0.4),
+            nn.Linear(hidden_units, hidden_units // 2),
+            nn.ReLU(),
+            nn.Dropout(0.4),
+            nn.Linear(hidden_units // 2, 102),
+            nn.LogSoftmax(dim=1)
+        )
