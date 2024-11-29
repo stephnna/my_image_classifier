@@ -51,9 +51,6 @@ python predict.py flowers/test/1/image_06752.jpg \
                   --top_k 5 --category_names cat_to_name.json --gpu
                   
 Output:
-
-diff
-Copy code
 Top Predictions:
 - Sunflower (87%)
 - Daisy (5%)
@@ -110,6 +107,7 @@ Submit a pull request. 🎉
 Stephen Ezea
 
 GitHub: github.com/stephnna/
+
 [LinkedIn](https://www.linkedin.com/in/stephen-ezea)
 📜 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
