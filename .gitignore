@@ -2,3 +2,4 @@ flowers/
 checkpoints/
 experiments_plots.ipynb
 .ipynb_checkpoints/
+.gitignore

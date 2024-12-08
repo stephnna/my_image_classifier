@@ -32,8 +32,6 @@ def get_model(arch, hidden_units):
 
     elif arch == 'resnet101':
         model = models.resnet101(pretrained=True)
-        print(model)
-        return
         # Freeze all layers except the last classifier
         for param in model.classifier.parameters():
             param.requires_grad = False
@@ -108,7 +106,6 @@ def main():
 
     # Initialize the model
     model = get_model(args.arch, args.hidden_units)
-    return
     model.to(device)
 
     # Define criterion and optimizer
